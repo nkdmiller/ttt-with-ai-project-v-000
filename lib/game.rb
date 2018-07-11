@@ -91,6 +91,7 @@ class Game
       valid = player.move(self.board)
       if valid == false
         player.move(self.board)
+      end
     end
   end
 end
