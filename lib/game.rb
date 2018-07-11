@@ -91,4 +91,9 @@ class Game
       player.move(self.board)
     end
   end
+  def play
+    while over? == true
+      self.turn
+    end
+  end
 end
