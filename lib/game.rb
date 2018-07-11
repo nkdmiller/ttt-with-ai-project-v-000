@@ -88,7 +88,9 @@ class Game
       return
     else
       player = self.current_player
-      player.move(self.board)
+      valid = player.move(self.board)
+      if valid == false
+        player.move(self.board)
     end
   end
 end
