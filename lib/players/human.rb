@@ -1,14 +1,14 @@
 require 'pry'
 module Players
   class Human < Player
-    def move(board)
+    def move
       moved = false
       while moved == false
         puts "Please select cell."
         input = gets.strip
         input = input.to_i
-        if board.valid_move?(input) == true
-          board.cells[input] = self.token
+        if self.board.valid_move?(input) == true
+          self.board.cells[input] = self.token
           moved = true
         else
           return "invalid"
