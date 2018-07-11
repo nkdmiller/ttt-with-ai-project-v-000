@@ -87,7 +87,8 @@ class Game
     if over? == true
       return
     else
-       while valid == false
+      valid = false
+      while valid == false
         player = self.current_player
         valid = player.move(self.board)
       end
