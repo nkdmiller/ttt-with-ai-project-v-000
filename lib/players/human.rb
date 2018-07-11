@@ -11,7 +11,7 @@ module Players
           board.cells[input] = self.token
           moved = true
         else
-          return "invalid"
+          return false
         end
       end
       return input.to_s
